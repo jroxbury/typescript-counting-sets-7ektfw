@@ -1,7 +1,8 @@
 function countSetsOfThree(numbers: number[], threshold: number) {
   const arrLen = numbers.length;
   if (arrLen < 3) {
-    throw Error("Less than 3 numbers");
+    console.error("Error: numbers array requires at least 3 numbers");
+    return;
   }
   let index0End = arrLen - 3;
   let index1End = arrLen - 2;
